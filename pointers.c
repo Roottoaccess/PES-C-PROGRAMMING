@@ -4,15 +4,17 @@
 void main(){
 	
 	// Creating 2 variable
-	int a = 50, b = 20;
+	int a = 50, b = 20, c = 44;
 	
 	// Creating 2 pointers
-	int *p, *q;
+	int *p, *q , *z;
 	
 	p = &a;
 	
 	q = &b;
-	
+
+		z = &c;
+		
 	// Now checking the results....
 	printf("value of a is: %d\n", a);
 	
@@ -26,4 +28,9 @@ void main(){
 	printf("address of a is: %x\n", p);
 	
 	printf("This is the address of b: %d\n", *q);
+	
+	// This is an experiment......
+	printf("The address of the variable c is: %x\n",z);
+	
+	printf("And the value of c is: %d\n", *z);
 }
